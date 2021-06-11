@@ -79,3 +79,8 @@ ol li{
 .fa-times:hover {
     background-color: crimson;
 }
+@media(max-width: 768px){
+    .center-div{
+        width: 55%;
+    }
+}

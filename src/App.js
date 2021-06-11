@@ -6,11 +6,12 @@ class App extends Component{
   constructor(props){
     super(props);
     this.state= {
-      newItem: "",
-      list: []
+      newItem:  "",
+      list:  []
     }
     
   }
+  
   updateInput(key,value){
     this.setState({
       [key]:value
@@ -32,8 +33,8 @@ class App extends Component{
     const list= [...this.state.list]
     const updatedList = list.filter(item => item.id !== id);
     this.setState({
-     list: updatedList
-    })
+     list: updatedList}
+    );
   }
 render()
 {
